@@ -1,0 +1,5 @@
+﻿  matrixR.cpp
+c:\users\malyn\desktop\malynkovsky_o_v\matrixr\matrixr.cpp(52): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\malyn\desktop\malynkovsky_o_v\matrixr\matrixr.cpp(60): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  matrixR.vcxproj -> C:\Users\malyn\Desktop\malynkovsky_o_v\Debug\matrixR.exe
+  matrixR.vcxproj -> C:\Users\malyn\Desktop\malynkovsky_o_v\Debug\matrixR.pdb (Partial PDB)
