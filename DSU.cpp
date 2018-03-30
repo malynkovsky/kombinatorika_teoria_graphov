@@ -1,23 +1,17 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-//#include <sstream>
 #include <vector>
 using namespace std;
 
 struct DSU {
-    vector <int> parent; /*rank;*/
+    vector <int> parent;
     DSU() {}
     DSU(int size) {
         parent.resize(size, -1);
-        //rank.assign(size, 0);// or ,1
     }
-    /*int Rank(int v) {
-
-    }*/
     void reset(int size) {
         parent.resize(size, -1);
-        //rank.assign(size, 0);// ранги множеств(деревьев)
     }
     void join(int i, int j) {
         i = find(i);
@@ -62,13 +56,11 @@ int main() {
     string str;
     while (fin >> str) {
         if (str == "RESET") {
-            /*int N;*/
             fin >> N;
             test.reset(N);
             fout << "RESET DONE" << endl;
         }
         if (str == "JOIN") {
-            /*int i = 0, j = 0;*/
             fin >> i >> j;
             if (test.find(i) != test.find(j)) {
                 test.join(i, j);
@@ -78,7 +70,6 @@ int main() {
             }
         }
         if (str == "CHECK") {
-            /*int i = 0, j = 0;*/
             fin >> i >> j;
             fout << test.check(i, j) << endl;
         }
