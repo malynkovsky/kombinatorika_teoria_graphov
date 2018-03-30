@@ -1,4 +1,0 @@
-﻿  priorityQueueL.cpp
-c:\users\malyn\desktop\malynkovsky_o_v\priorityqueuel\priorityqueuel.cpp(134): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  priorityQueueL.vcxproj -> C:\Users\malyn\Desktop\malynkovsky_o_v\Debug\priorityQueueL.exe
-  priorityQueueL.vcxproj -> C:\Users\malyn\Desktop\malynkovsky_o_v\Debug\priorityQueueL.pdb (Partial PDB)

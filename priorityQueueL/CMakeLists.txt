@@ -1,2 +1,0 @@
-project(priorityQueueL)
-add_executable(priorityQueueL priorityQueueL.h test_priorityQueueL.cpp priorityQueueL.cpp)
