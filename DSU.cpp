@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <sstream>
+//#include <sstream>
 #include <vector>
 using namespace std;
 
@@ -12,9 +12,9 @@ struct DSU {
         parent.resize(size, -1);
         //rank.assign(size, 0);// or ,1
     }
-    int Rank(int v) {
+    /*int Rank(int v) {
 
-    }
+    }*/
     void reset(int size) {
         parent.resize(size, -1);
         //rank.assign(size, 0);// ранги множеств(деревьев)
@@ -32,23 +32,23 @@ struct DSU {
         
     }
     string check(int i, int j) {
-        if (find(i) != find(j)) {
-            return "NO";
+        if (find(i) == find(j)) {
+            return "YES";
         }
         else {
-            return "YES";
+            return "NO";
         }
     }
     int find(int v) {
         int root = v;
         while (parent[root] != -1)
             root = parent[root];
-        /*while (parent[v] != -1)
+        while (parent[v] != -1)
         {
             int tmp = v;
             v = parent[v];
             parent[tmp] = root;
-        }*/
+        }
         return root;
     }
 };
